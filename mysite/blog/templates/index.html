@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>1ang Home Page</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static "css/custom.css" %}">
+</head>
+<body>
+
+	<header id="header" style = "background-image: url(https://source.unsplash.com/random);">
+		<nav class="nav">
+			<div class="container-fluid">
+				<div class = "row">
+					<div class = "col-sm-5 hidden-xs">
+						<a href="#" title="article">Article</a>
+						<a href="#" title="gallery">Gallery</a>
+					</div>
+					<div class = "col-sm-2 text-middle">
+						<img src="../static/img/icon.png" width = "60px" height = "60px" />
+					</div>
+					<div class = "col-sm-5 text-right hidden-xs">
+						<div style ="display: inline-block;margin: 10px 0px 10px 0px;">
+							LaRry 1ang
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class = "title">
+			<div class="container-fluid">
+				<div class = "row">
+					<div class = "col-sm-2">
+					</div>
+					<div class = "col-sm-8" style = "text-align: center;">
+						<p>My Personal Blog.</p>
+						<p style = "font-size: 20px;">@浪里个郎呦</p>
+					</div>
+					<div class = "col-sm-2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "button">
+			<div class="container-fluid">
+				<div class = "row">
+					<div class = "col-sm-2">
+					</div>
+					<div class = "col-sm-8" style = "text-align: center;">
+						<a href="#" title="article">Article</a>
+						<a href="#" title="gallery">Gallery</a>
+					</div>
+					<div class = "col-sm-2">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="background-overlay">
+
+		</div>
+	</header><!-- /header -->
+
+	<section>
+		<div class = "container-fluid basicInfo">
+			<div class = "row">
+				<div class = "col-sm-4">
+					<p>Now</p>
+					<p>
+						<img src="../static/img/nottingham.png" alt="university" width = "200px" height="200px" />
+					</p>
+					<p>Student</p>
+					<hr>
+				</div>
+				<div class = "col-sm-4">
+					<p>Want to be</p>
+					<p>
+						<img src="../static/img/programmer.png" alt="programmer" width = "200px" height="200px" />
+					</p>
+					<p>Programmer</p>
+					<hr>
+				</div>
+				<div class = "col-sm-4">
+					<p>Like</p>
+					<p>
+						<img src="../static/img/photograph.png" alt="photograph" width = "200px" height="200px" />
+					</p>
+					<p>Photograph</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="../static/js/jquery-2.2.2.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>
