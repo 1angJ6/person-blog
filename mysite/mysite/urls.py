@@ -24,4 +24,4 @@ urlpatterns = [
 ]
 
 
-handler404 = blog_views.error
+
