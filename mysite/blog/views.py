@@ -7,5 +7,5 @@ def index(request):
 
 
 # HTTP Error 400
-def notFound(request):
-    return render(request, '404.html')
+def error(request):
+    return render(request, '404.html', status=404)

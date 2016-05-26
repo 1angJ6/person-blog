@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
 
-handler404 = 'blog_views.notFound'
+
+handler404 = blog_views.error
