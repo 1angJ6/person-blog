@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 import os
 import urllib.request
 import urllib
@@ -34,7 +35,8 @@ def instagram(request, starID):
         path.append('static/img/' + starID + str(i) + '.jpg')
         urllib.request.urlretrieve(images[i]['display_src'], path[i])
 
-    return render(request, 'instagram.html', {'id': starID, 'path': path})
+    # return render(request, 'instagram.html', {'id': starID, 'path': path})
+    return HttpResponse(path)
 
 
 def starsIns(request):
