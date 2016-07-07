@@ -32,7 +32,7 @@ def instagram(request, starID):
 
     path = []
     for i in range(0, len(images)):
-        path.append('./static/img/' + starID + str(i) + '.jpg')
+        path.append('/static/img/' + starID + str(i) + '.jpg')
         urllib.request.urlretrieve(images[i]['display_src'], path[i])
 
     return render(request, 'instagram.html', {'id': starID, 'path': path})
