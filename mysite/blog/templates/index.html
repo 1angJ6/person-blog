@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>1ang Home Page</title>
-	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/custom.css" %}">
 </head>
 <body>
@@ -20,7 +20,7 @@
 						<a href="#" title="gallery">Gallery</a>
 					</div>
 					<div class = "col-sm-2 text-middle">
-						<img src="../static/img/icon.png" width = "60px" height = "60px" />
+						<img src="{% static "img/icon.png" %}" width = "60px" height = "60px" />
 					</div>
 					<div class = "col-sm-5 text-right hidden-xs">
 						<div style ="display: inline-block;margin: 10px 0px 10px 0px;">
@@ -70,7 +70,7 @@
 				<div class = "col-sm-4">
 					<p>Now</p>
 					<p>
-						<img src="../static/img/nottingham.png" alt="university" width = "200px" height="200px" />
+						<img src="{% static "img/nottingham.png" %}" alt="university" width = "200px" height="200px" />
 					</p>
 					<p>Student</p>
 					<hr>
@@ -78,7 +78,7 @@
 				<div class = "col-sm-4">
 					<p>Want to be</p>
 					<p>
-						<img src="../static/img/programmer.png" alt="programmer" width = "200px" height="200px" />
+						<img src="{% static "img/programmer.png" %}" alt="programmer" width = "200px" height="200px" />
 					</p>
 					<p>Programmer</p>
 					<hr>
@@ -86,7 +86,7 @@
 				<div class = "col-sm-4">
 					<p>Like</p>
 					<p>
-						<img src="../static/img/photograph.png" alt="photograph" width = "200px" height="200px" />
+						<img src="{% static "img/photograph.png" %}" alt="photograph" width = "200px" height="200px" />
 					</p>
 					<p>Photograph</p>
 					<hr>
@@ -96,7 +96,7 @@
 	</section>
 
 
-	<script src="../static/js/jquery-2.2.2.js"></script>
-	<script src="../static/js/bootstrap.min.js"></script>
+	<script src="{% static "js/jquery-2.2.2.js" %}"></script>
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
 </body>
 </html>
