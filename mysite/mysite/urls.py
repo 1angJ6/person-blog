@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'starsIns/', blog_views.starsIns),
     url(r'^instagram/(.*)/', blog_views.instagram),
     url(r'^timetable/([0-9]{7})/([0-9]{2})/([0-9]{2})/', blog_views.timetable),
+    url(r'studentID/', blog_views.studentID),
+    url(r'^timetableTemp/(.*)/', blog_views.timetable),
 ]
 
 
