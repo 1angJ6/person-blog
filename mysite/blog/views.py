@@ -56,19 +56,21 @@ def studentID(request):
     if request.method == 'POST':
         form = instForm(request.POST)
         if form.is_valid():
-            return HttpResponseRedirect('/instagram/' + form.cleaned_data['id'] + '/')
+            return HttpResponseRedirect('/timetableTemp/' + form.cleaned_data['id'] + '/')
     else:
         form = instForm()
     return render(request, 'studentID.html', {'form': form})
 
-def timetableTemp(request, studentID):
-    url = 'http://timetablingunnc.nottingham.ac.uk:8005/reporting/Individual;Students;id;' + studentID + '?template=SWSCUST+Student+Individual&weeks=1-20&days=1-5&periods=1-26&Width=0&Height=0'
 
-    request = urllib.request.Request(url)
-    response = urllib.request.urlopen(request)
+def timetableTemp(request, studentID):
+    url = 'http://timetablingunnc.nottingham.ac.uk:8017/reporting/Individual;Student+Sets;id;' + studentID + '?template=Joint+Student+Set+Individual&weeks=1-20&days=1-5&periods=1-26&Width=0&Height=0'
+
+    newRequest = urllib.request.Request(url)
+    response = urllib.request.urlopen(newRequest)
     html = response.read().decode('utf-8')
 
-    return render(request, 'instagram.html', {'id': studentID(), 'data': html})
+    return HttpResponse(html)
+
 
 def get_name(s):
     s = s.split(': ', 1)[1]
