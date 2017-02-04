@@ -63,7 +63,7 @@ def studentID(request):
 
 
 def timetableTemp(request, studentID):
-    url = 'http://timetablingunnc.nottingham.ac.uk:8017/reporting/Individual;Student+Sets;id;' + studentID + '?template=Joint+Student+Set+Individual&weeks=1-20&days=1-5&periods=1-26&Width=0&Height=0'
+    url = 'http://timetablingunnc.nottingham.ac.uk:8017/reporting/Individual;Student+Sets;id;' + studentID + '?template=Joint+Student+Set+Individual&weeks=1-20&days=1-5&periods=26-52&Width=0&Height=0'
 
     newRequest = urllib.request.Request(url)
     response = urllib.request.urlopen(newRequest)
