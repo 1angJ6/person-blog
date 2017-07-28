@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 
 <!DOCTYPE html>
 <html>
@@ -18,15 +18,24 @@
 					<div class = "col-sm-5 hidden-xs">
 						<a href="#" title="article">Article</a>
 						<a href="#" title="gallery">Gallery</a>
-						<a href="http://www.1ang.me/studentID/" title="gallery">课表</a>
+{#						<a href="{% url 'blog.views.studentID' %}" title="gallery">课表</a>#}
 					</div>
 					<div class = "col-sm-2 text-middle">
 						<img src="{% static "img/icon.png" %}" width = "60px" height = "60px" />
 					</div>
 					<div class = "col-sm-5 text-right hidden-xs">
-						<div style ="display: inline-block;margin: 10px 0px 10px 0px;">
-							LaRry 1ang
-						</div>
+{#						<div style ="display: inline-block;margin: 10px 0px 10px 0px;">#}
+{#							LaRry 1ang#}
+{#						</div>#}
+                        <a href="https://github.com/1angJ6" title="github" target="_blank">
+                            <img src="{% static "img/github.png" %}" alt="GitHub" width="35px">
+                        </a>
+						<a href="http://www.linkedin.com/in/jl-301690145/" title="linkedin" target="_blank">
+                            <img src="{% static "img/linkedin.png" %}" alt="LinkedIn" width="35px">
+                        </a>
+                        <a href="http://s.weibo.com/user/%25E6%25B5%25AA%25E9%2587%258C%25E4%25B8%25AA%25E9%2583%258E%25E5%2591%25A6&Refer=weibo_user" title="weibo" target="_blank">
+                            <img src="{% static "img/weibo.png" %}" alt="Weibo" width="35px">
+                        </a>
 					</div>
 				</div>
 			</div>
@@ -37,64 +46,64 @@
 					<div class = "col-sm-2">
 					</div>
 					<div class = "col-sm-8" style = "text-align: center;">
-						<p>My Personal Blog.</p>
-						<p style = "font-size: 20px;">@浪里个郎呦</p>
+						<p style = "font-size: 40px;">Do you best without thinking about the results.</p>
+						<p style = "font-size: 30px;">但行好事，莫问前程。</p>
 					</div>
 					<div class = "col-sm-2">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class = "button">
-			<div class="container-fluid">
-				<div class = "row">
-					<div class = "col-sm-2">
-					</div>
-					<div class = "col-sm-8" style = "text-align: center;">
-						<a href="#" title="article">Article</a>
-						<a href="#" title="gallery">Gallery</a>
-					</div>
-					<div class = "col-sm-2">
-					</div>
-				</div>
-			</div>
-		</div>
+{#		<div class = "button">#}
+{#			<div class="container-fluid">#}
+{#				<div class = "row">#}
+{#					<div class = "col-sm-2">#}
+{#					</div>#}
+{#					<div class = "col-sm-8" style = "text-align: center;">#}
+{#						<a href="#" title="article">Article</a>#}
+{#						<a href="#" title="gallery">Gallery</a>#}
+{#					</div>#}
+{#					<div class = "col-sm-2">#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>#}
 
 		<div class="background-overlay">
 
 		</div>
 	</header><!-- /header -->
 
-	<section>
-		<div class = "container-fluid basicInfo">
-			<div class = "row">
-				<div class = "col-sm-4">
-					<p>Now</p>
-					<p>
-						<img src="{% static "img/nottingham.png" %}" alt="university" width = "200px" height="200px" />
-					</p>
-					<p>Student</p>
-					<hr>
-				</div>
-				<div class = "col-sm-4">
-					<p>Want to be</p>
-					<p>
-						<img src="{% static "img/programmer.png" %}" alt="programmer" width = "200px" height="200px" />
-					</p>
-					<p>Programmer</p>
-					<hr>
-				</div>
-				<div class = "col-sm-4">
-					<p>Like</p>
-					<p>
-						<img src="{% static "img/photograph.png" %}" alt="photograph" width = "200px" height="200px" />
-					</p>
-					<p>Photograph</p>
-					<hr>
-				</div>
-			</div>
-		</div>
-	</section>
+{#	<section>#}
+{#		<div class = "container-fluid basicInfo">#}
+{#			<div class = "row">#}
+{#				<div class = "col-sm-4">#}
+{#					<p>Now</p>#}
+{#					<p>#}
+{#						<img src="{% static "img/nottingham.png" %}" alt="university" width = "200px" height="200px" />#}
+{#					</p>#}
+{#					<p>Student</p>#}
+{#					<hr>#}
+{#				</div>#}
+{#				<div class = "col-sm-4">#}
+{#					<p>Want to be</p>#}
+{#					<p>#}
+{#						<img src="{% static "img/programmer.png" %}" alt="programmer" width = "200px" height="200px" />#}
+{#					</p>#}
+{#					<p>Programmer</p>#}
+{#					<hr>#}
+{#				</div>#}
+{#				<div class = "col-sm-4">#}
+{#					<p>Like</p>#}
+{#					<p>#}
+{#						<img src="{% static "img/photograph.png" %}" alt="photograph" width = "200px" height="200px" />#}
+{#					</p>#}
+{#					<p>Photograph</p>#}
+{#					<hr>#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>#}
+{#	</section>#}
 
 
 	<script src="{% static "js/jquery-2.2.2.js" %}"></script>
