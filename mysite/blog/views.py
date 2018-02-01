@@ -8,11 +8,19 @@ import urllib
 import json
 from bs4 import *
 
+# articles
+from blog.models import Article
+from django.shortcuts import get_object_or_404, render_to_response
+
 from tools.forms import instForm
 
 
 def index(request):
     return render(request, 'index.html')
+
+
+def view_article(request, article_id):
+    return render(request, 'view_post.html', {'article': get_object_or_404(Article, id=article_id)})
 
 
 def instagram(request, starID):
@@ -91,7 +99,6 @@ def parse_course(table_info, start_time, duration):
 
 
 def timetable(request, studentId, weekBegin, weekEnd):
-
     data = {}
 
     try:
@@ -134,6 +141,9 @@ def timetable(request, studentId, weekBegin, weekEnd):
     # print(json.dumps(data, indent=4))
     return HttpResponse(str(json.dumps(data, indent=4)))
 
+# Not open
+def wait(request):
+    return render(request, 'wait.html');
 
 # HTTP Error 400
 def error(request):

@@ -21,11 +21,13 @@ from blog import views as blog_views
 urlpatterns = [
     url(r'^$', blog_views.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^blog/article/(.*)', blog_views.view_article),
     url(r'starsIns/', blog_views.starsIns),
     url(r'^instagram/(.*)/', blog_views.instagram),
     url(r'^timetable/([0-9]{7})/([0-9]{2})/([0-9]{2})/', blog_views.timetable),
     url(r'studentID/', blog_views.studentID),
     url(r'^timetableTemp/(.*)/', blog_views.timetableTemp),
+    url(r'^wait/', blog_views.wait),
 ]
 
 
