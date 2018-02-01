@@ -27,7 +27,7 @@ urlpatterns = [
     url(r'^timetable/([0-9]{7})/([0-9]{2})/([0-9]{2})/', blog_views.timetable),
     url(r'studentID/', blog_views.studentID),
     url(r'^timetableTemp/(.*)/', blog_views.timetableTemp),
-    url(r'^wait/', blog_views.wait),
+    url(r'wait/', blog_views.wait),
 ]
 
 

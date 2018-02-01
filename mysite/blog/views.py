@@ -143,7 +143,7 @@ def timetable(request, studentId, weekBegin, weekEnd):
 
 # Not open
 def wait(request):
-    return render(request, 'wait.html');
+    return render(request, 'wait.html')
 
 # HTTP Error 400
 def error(request):
